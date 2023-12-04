@@ -1,0 +1,152 @@
+/* AdminDashboard.css */
+.admin-dashboard-container {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .user-box, .review-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 80%; /* Adjust width as necessary */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .user-box h3, .review-box h3 {
+    color: #333333; /* Dark text for readability */
+    margin: 0;
+  }
+  
+  .user-box p, .review-box p {
+    color: #555555; /* Slightly lighter text for descriptions */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Rounded corners */
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  .message {
+    color: red;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Add styles for user and review details */
+  .review-detail, .user-detail {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .review-detail > p:first-child, .user-detail > p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .review-detail > p:nth-child(3), .user-detail > p:nth-child(3) {
+    background-color: #eaf0f6;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+  
+  .review-detail > p:last-child, .user-detail > p:last-child {
+    color: #888;
+    font-size: 0.9em;
+  }
+  /* AdminDashboard.css */
+.admin-dashboard-container {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.admin-dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-header h1 {
+  color: #2a2a72; /* Dark blue */
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.user-list-section, .review-list-section {
+  background-color: white;
+  width: 80%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+.user-list-section h2, .review-list-section h2 {
+  color: #4a4e69; /* Dark grey */
+  margin: 0 0 10px 0;
+}
+
+.user-box, .review-box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.user-box h3, .review-box h3 {
+  color: #333333;
+  margin: 0 0 10px 0;
+}
+
+.user-box p, .review-box p {
+  color: #555555;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  color: red;
+  padding: 10px;
+  margin-top: 10px;
+}
