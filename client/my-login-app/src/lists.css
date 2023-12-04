@@ -1,0 +1,95 @@
+.lists-page-container {
+    background-color: yellow; /* Set to yellow as per request */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.list-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Adjust width as necessary */
+}
+
+/* Reusing styles from MainPage.css for consistency */
+.button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.dropdown-button {
+    width: 20px; 
+    height: 20px;
+    padding: 0;
+    margin-left: 10px; 
+    vertical-align: middle; 
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  
+  .hero-name {
+    display: inline; 
+    margin-right: 5px; 
+  }
+  
+  .hero-details-container {
+    display: flex;
+    align-items: center; 
+  }
+  .review-box {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for input boxes to make them neater */
+  input[type="text"], input[type="number"], textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"], button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+  }
+  .reviews-container {
+    margin-top: 10px;
+  }
+  
+  .review-box {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
