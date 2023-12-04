@@ -1,0 +1,143 @@
+/* MainPage.css */
+.app-container {
+    background-color: orange; /* light grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input, .search-button {
+    padding: 10px;
+    border: none;
+    margin: 0 2px;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+  }
+  
+  .search-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* The following styles are for the list of superheroes */
+  .superhero-list {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .superhero-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .navigation-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  
+  .clear-button {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .clear-button:hover {
+    background-color: #bd2130;
+  }  
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .full-experience-text {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Space between text and buttons */
+  }
+  
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align buttons to the right */
+
+  }
+  
+  
+  .nav-button {
+    margin-left: 1px;
+  }
+  
+  .nav-button:last-child {
+    margin-bottom: 0; /* No margin for the last button */
+  }
+  .nav-button a {
+    display: block;
+    padding: 5x;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button a:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    padding: 1x;
+
+  }  
+
+  
+  
+  
+  .superhero-details {
+    display: none;
+    padding-top: 10px;
+  }
+  
+  .superhero-item:hover .superhero-details {
+    display: block;
+  }
+  
+  .app-container {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  
