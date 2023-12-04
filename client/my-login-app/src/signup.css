@@ -1,0 +1,128 @@
+
+  
+  h2 {
+    color: #333;
+    margin-bottom: 30px;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    
+  }
+  
+  .form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: grey;
+    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+
+  }
+  
+  .secondary-action {
+    margin-top: 20px;
+    
+  }
+  
+  .secondary-action button {
+    background: none;
+    color: grey;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .secondary-action button:hover,
+  .secondary-action button:focus {
+    text-decoration: underline;
+  }
+  
+  .signup-container {
+    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image in the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .login-container {
+    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image in the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  .login-background{
+    background-color: orange ;
+
+
+  }
+  .signup-background {
+    background-color: orange; /* This will set the page background to orange */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+html, body {
+  height: 100%;
+  width: 100%; /* Ensure the body takes up the full width as well */
+  background-color: orange; /* Apply the background color directly to the body */
+}
+
+/* Update the button styles to match the HomePage button styles */
+button {
+  background-color: #FFD700; /* Gold background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding around text */
+  margin: 10px; /* Space around buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Hand cursor on hover */
+  box-shadow: 3px 3px 0px #333; /* Shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  box-shadow: 0px 5px 15px #333; /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
