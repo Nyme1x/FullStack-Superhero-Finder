@@ -1,0 +1,65 @@
+
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Make all text white */
+    height: 100vh; /* Use the full height of the viewport */
+    font-family: 'Bangers', cursive; /* Apply the superhero font to all text */
+    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+ 
+  
+  /* Hover effect for buttons */
+  .button:hover {
+    box-shadow: 0px 5px 15px #333; /* Larger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+ /* Adjusted Style for the buttons */
+.button {
+    background-color: #FFD700; /* Gold background */
+    color: white; /* White text */
+    padding: 5px 10px; /* Reduced padding around text */
+    margin: 5px; /* Reduced space around buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    box-shadow: 3px 3px 0px #333; /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+  
+  /* Adjust the size of the buttons container if necessary */
+  .buttons-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  
+  /* Ensure that links do not have any text decoration */
+  .button-link {
+    text-decoration: none;
+  }
+  /* Style for the title */
+.home-title {
+    font-size: 4rem; /* Large font size for the title */
+    margin-top: 0; /* Remove margin at the top if necessary */
+    font-weight: bold; /* Make the title bold */
+  }
+  
+  /* Style for the welcome message */
+  .welcome-message {
+    font-size: 1.5rem; /* Increase font size for the welcome message */
+    font-weight: bold; /* Make the text bold */
+    max-width: 80%; /* Max width of the welcome message to avoid very long lines */
+    margin-bottom: 2rem; /* Space below the welcome message */
+  }
+  
