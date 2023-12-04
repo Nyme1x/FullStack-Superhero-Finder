@@ -1,0 +1,78 @@
+/* DemoLists.css */
+.demo-lists-container {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .public-list-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 80%; /* Adjust width as necessary */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .public-list-item h3 {
+    color: #333333; /* Dark text for readability */
+    margin: 0;
+  }
+  
+  .public-list-item p {
+    color: #555555; /* Slightly lighter text for descriptions */
+  }
+  
+  .main-page-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .main-page-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  /* Additional styles to ensure consistency with MainPage */
+  .demo-lists-container h1 {
+    color: black;
+    margin-bottom: 20px;
+  }
+  .review-detail {
+  border: 1px solid #ddd; /* Add a border to each review box */
+  padding: 10px;
+  margin-bottom: 10px; /* Add some space between the review boxes */
+  background-color: #f9f9f9; /* A light background for the review */
+  border-radius: 4px; /* Rounded corners for the boxes */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* A subtle shadow for depth */
+}
+
+/* If you want to add a title to the review box, you might style it like this */
+.review-detail > p:first-child {
+  font-weight: bold; /* Make the first paragraph, which might contain the reviewer's name, bold */
+  margin-bottom: 5px; /* Add some space between the title and the content */
+}
+
+/* To make the rating stand out, you could style it differently */
+.review-detail > p:nth-child(3) { /* Assuming the rating is the third paragraph */
+  background-color: #eaf0f6; /* A different background for the rating */
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px; /* Rounded corners for the rating */
+  margin: 5px 0; /* Add some space around the rating */
+}
+
+/* You could style the date to appear more subtle */
+.review-detail > p:last-child {
+  color: #888; /* A lighter color for the date */
+  font-size: 0.9em; /* Slightly smaller font size for the date */
+}
