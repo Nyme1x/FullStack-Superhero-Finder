@@ -122,7 +122,7 @@ router.post('/signUp', (req, res) => {
 //send verification email
 const sendVerificationEmail = ({_id, email}, res) => {
     //url to be used in email 
-    const currentURL = "http://localhost:3000/";
+    const currentURL = "http://localhost:3000";
 
     const uniqueString = uuidv4() + _id;
     
@@ -130,7 +130,7 @@ const sendVerificationEmail = ({_id, email}, res) => {
         from: process.env.AUTH_EMAIL,
         to: email,
         subject: "Verify Your Email",
-        html: `<p>Verify your email address to complete signup and log into your account.</p><p>This link <b>expires in 6 hours</b>.</p><p>Press <a href="${currentURL + "users/verify/" +_id+ "/"  + uniqueString}>here</a> to proceed.</p>`,
+        html: `<p>Verify your email address to complete signup and log into your account.</p><p>This link <b>expires in 6 hours</b>.</p><p>Press <a href="${currentURL + "/api/users/verify/" +_id+ "/"  + uniqueString}>here</a> to proceed.</p>`,
 
     };
 
@@ -209,19 +209,19 @@ router.get('/verify/:userId/:uniqueString', (req,res) => {
                             .deleteOne({_id: userId})
                             .then(() => {
                                 let message = "Link has expired. Please sign up again";
-                                res.redirect( `/users/verified/error=true&message=${message}`)
+                                res.redirect( `api/users/verified/error=true&message=${message}`)
 
                             })
                             .catch(error => {
                                 let message = "Clearing user with expired unique string failed";
-                                res.redirect( `/users/verified/error=true&message=${message}`)
+                                res.redirect( `api/users/verified/error=true&message=${message}`)
 
                             })
                     })
                     .catch((error) => {
                         console.log(error)
                         let message = "An error occured while clearing expired user verification record";
-                        res.redirect( `/users/verified/error=true&message=${message}`)
+                        res.redirect( `api/users/verified/error=true&message=${message}`)
                     })
             } else {
                 //valid record exists so we validate the user string 
@@ -242,27 +242,27 @@ router.get('/verify/:userId/:uniqueString', (req,res) => {
                             })
                             .catch(error =>{
                                 let message = "An error occured while finalizing successful verificaiton.";
-                            res.redirect( `/users/verified/error=true&message=${message}`)
+                            res.redirect( `api/users/verified/error=true&message=${message}`)
 
                             })
                         })
                         .catch(error => {
                             console.log(error);
                             let message = "An error occured while updating user record to show verified.";
-                            res.redirect( `/users/verified/error=true&message=${message}`)
+                            res.redirect( `api/users/verified/error=true&message=${message}`)
                         })
 
                     } else {
                         // existing record but incorrect verification details passed
                         let message = "Invalid verification details passed check your inbox";
-                        res.redirect( `/users/verified/error=true&message=${message}`)
+                        res.redirect( `api/users/verified/error=true&message=${message}`)
 
                      }
                     
                 })
                 .catch(error => {
                     let message = "An error occured while comparing unique strings";
-                    res.redirect( `/users/verified/error=true&message=${message}`)
+                    res.redirect( `api/users/verified/error=true&message=${message}`)
 
 
 
@@ -271,7 +271,7 @@ router.get('/verify/:userId/:uniqueString', (req,res) => {
         } else {
             //user verification record doesn't exist
             let message = "Account record doesn't exist or has been verified already. Please sign up or login.";
-            res.redirect( `/users/verified/error=true&message=${message}`)
+            res.redirect( `api/users/verified/error=true&message=${message}`)
             
 
         }
@@ -279,7 +279,7 @@ router.get('/verify/:userId/:uniqueString', (req,res) => {
     .catch((error) =>{
        console.log(error);
        let message = "An error occured while checking for existing user verification record";
-       res.redirect( `/users/verified/error=true&message=${message}`)
+       res.redirect( `api/users/verified/error=true&message=${message}`)
         })
 });
 
@@ -368,13 +368,14 @@ router.put('/updatePassword', (req, res) => {
 
 
 const adminCheck = async (req, res, next) => {
-    // Retrieve the admin's username from the request query
-    const adminUsername = req.query.adminUsername; 
+    const adminUsername = req.query.adminUsername;
+    console.log("Admin Username:", adminUsername);
   
     try {
       const adminUser = await User.findOne({ name: adminUsername });
+      console.log("Admin User:", adminUser);
       if (adminUser && adminUser.isAdmin) {
-        next(); // The user is an admin, proceed to the next handler
+        next();
       } else {
         return res.status(403).json({
           status: "FAILED",
@@ -382,22 +383,13 @@ const adminCheck = async (req, res, next) => {
         });
       }
     } catch (err) {
+      console.error("Error in adminCheck:", err);
       return res.status(500).json({
         status: "FAILED",
         message: "Internal server error"
       });
     }
   };
-  
-
-
-
-
-
-
-
-
-
 
 router.post('/signIn', (req, res) => {
     let { email, password } = req.body;

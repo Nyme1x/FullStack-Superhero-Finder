@@ -39,13 +39,13 @@ app.use(express.static(path.join(__dirname, 'views')));
 
 
 const superheroRoute = require('./routes/superheroes');
-app.use('/superheroes', superheroRoute);
+app.use('/api/superheroes', superheroRoute);
 
 const listsRouter = require('./routes/lists'); // adjust the path as necessary
-app.use('/lists', listsRouter);
+app.use('/api/lists', listsRouter);
 
 const usersRouter = require("./routes/users");
-app.use('/users', usersRouter);
+app.use('/api/users', usersRouter);
 
 
 

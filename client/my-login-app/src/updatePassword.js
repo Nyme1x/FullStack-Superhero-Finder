@@ -17,7 +17,7 @@ function UpdatePassword() {
     // Add validation for new passwords matching, etc.
 
     try {
-      const response = await fetch('/users/updatePassword', {
+      const response = await fetch('api/users/updatePassword', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -14,7 +14,7 @@ function Signup() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3000/users/signUp', {
+      const response = await fetch('api/users/signUp', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

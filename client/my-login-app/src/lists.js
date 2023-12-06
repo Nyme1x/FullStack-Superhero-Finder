@@ -25,7 +25,7 @@ function ListsPage() {
   }, []);
 
   function fetchLists() {
-    const url = `/lists/lists?username=${encodeURIComponent(username)}`;
+    const url = `api/lists/lists?username=${encodeURIComponent(username)}`;
     fetch(url)
       .then(response => response.json())
       .then(data => setLists(data))
@@ -33,7 +33,7 @@ function ListsPage() {
   }
 
   function fetchPublicLists() {
-    const url = `/lists/Find/public`;
+    const url = `api/lists/Find/public`;
     fetch(url)
       .then(response => response.json())
       .then(data => setPublicLists(data))
@@ -43,7 +43,7 @@ function ListsPage() {
   const createNewList = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/lists/lists/create', {
+      const response = await fetch('api/lists/lists/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function ListsPage() {
       setHeroesInSelectedList([]);
     } else {
       setSelectedListName(listName);
-      fetch(`/lists/${encodeURIComponent(listName)}/superheroes/info`)
+      fetch(`api/lists/${encodeURIComponent(listName)}/superheroes/info`)
         .then(response => response.json())
         .then(data => setHeroesInSelectedList(data))
         .catch(error => console.error('Error fetching heroes for list:', error));
@@ -83,7 +83,7 @@ function ListsPage() {
   }
 
   function deleteList(listName) {
-    fetch(`/lists/${encodeURIComponent(listName)}`, {
+    fetch(`api/lists/${encodeURIComponent(listName)}`, {
       method: 'DELETE'
     })
     .then(response => {
@@ -103,7 +103,7 @@ function ListsPage() {
   }
 
   function addHeroToList() {
-    fetch(`/lists/add/${encodeURIComponent(selectedListName)}`, {
+    fetch(`api/lists/add/${encodeURIComponent(selectedListName)}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ superheroIds: [heroIdToAdd] })
@@ -123,7 +123,7 @@ function ListsPage() {
 
  function removeHeroFromList(superheroId) {
   console.log(superheroId);
-  fetch(`/lists/remove/${encodeURIComponent(selectedListName)}/${encodeURIComponent(superheroId)}`, {
+  fetch(`api/lists/remove/${encodeURIComponent(selectedListName)}/${encodeURIComponent(superheroId)}`, {
     method: 'DELETE'
     
   })
@@ -146,7 +146,7 @@ function ListsPage() {
   const addReview = async (listName, e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`/lists/lists/${encodeURIComponent(listName)}/reviews`, {
+      const response = await fetch(`api/lists/lists/${encodeURIComponent(listName)}/reviews`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

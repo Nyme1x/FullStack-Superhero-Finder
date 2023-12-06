@@ -15,7 +15,7 @@ function AdminDashboard() {
 
   async function fetchNonAdminUsers() {
     try {
-      const response = await fetch('/users/users');
+      const response = await fetch('api/users/users');
       const data = await response.json();
       if (data.status === 'SUCCESS') {
         setUsers(data.data);
@@ -27,7 +27,7 @@ function AdminDashboard() {
 
   async function fetchLists() {
     try {
-      const response = await fetch('/lists');
+      const response = await fetch('api/lists');
       const data = await response.json();
       setLists(data);
     } catch (error) {
@@ -37,8 +37,9 @@ function AdminDashboard() {
 
   const handleGrantAdmin = async (username) => {
     const adminUsername = localStorage.getItem('name');
+    console.log(adminUsername);
     try {
-      const response = await fetch(`http://localhost:3000/users/grant-admin/${username}?adminUsername=${adminUsername}`, {
+      const response = await fetch(`api/users/grant-admin/${username}?adminUsername=${adminUsername}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -60,8 +61,9 @@ function AdminDashboard() {
 
   const toggleUserActivation = async (username) => {
     const adminUsername = localStorage.getItem('name');
+    console.log(adminUsername);
     try {
-      const response = await fetch(`http://localhost:3000/users/deactivate-user/${username}?adminUsername=${adminUsername}`, {
+      const response = await fetch(`api/users/deactivate-user/${username}?adminUsername=${adminUsername}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -84,7 +86,7 @@ function AdminDashboard() {
   const hideReview = async (listName, reviewId) => {
     const adminUsername = localStorage.getItem('name');
     try {
-      const endpoint = `http://localhost:3000/lists/lists/${listName}/reviews/hide/${reviewId}?adminUsername=${adminUsername}`;
+      const endpoint = `api/lists/lists/${listName}/reviews/hide/${reviewId}?adminUsername=${adminUsername}`;
       const response = await fetch(endpoint, { method: 'PUT' });
       const data = await response.json();
       if (data.status === 'SUCCESS') {
@@ -102,7 +104,7 @@ function AdminDashboard() {
   const unhideReview = async (listName, reviewId) => {
     const adminUsername = localStorage.getItem('name');
     try {
-      const endpoint = `http://localhost:3000/lists/lists/${listName}/reviews/unhide/${reviewId}?adminUsername=${adminUsername}`;
+      const endpoint = `api/lists/lists/${listName}/reviews/unhide/${reviewId}?adminUsername=${adminUsername}`;
       const response = await fetch(endpoint, { method: 'PUT' });
       const data = await response.json();
       if (data.status === 'SUCCESS') {

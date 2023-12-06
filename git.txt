@@ -1,0 +1,155 @@
+commit af4f11e4955c022c0524342d2e16f0e03860bd53
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:23:47 2023 -0500
+
+    extra stuff like pictures used
+
+commit 51c2331f962d6c77028c877a12d45811ab890b68
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:23:05 2023 -0500
+
+    final css changes
+
+commit a26e3d3b3ccd0ed73605e742e058167de4dc5710
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:22:43 2023 -0500
+
+    Dmca policies
+
+commit 881476658e86ce61600ee1997fd54e2e35256a83
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:22:00 2023 -0500
+
+    set up the admin dashboard with privelages
+
+commit e3ba7fcc3983bb808cb3f98f772a433c3f47da91
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:21:05 2023 -0500
+
+    more css changes
+
+commit 6e8129f66cdacc558c868f6de1d50a1500f8ef33
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:19:56 2023 -0500
+
+    added a update password function  and css
+
+commit 5349dfcacf7308568872bfda4c95a6628c8d41f8
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:19:06 2023 -0500
+
+    automic add of launch.js to my code
+
+commit 28388e2864085cd72d0a7bbaeb62f8716be1bd09
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:18:19 2023 -0500
+
+    set up my app.js front end with the server setup
+
+commit 3c6b20b38c3b1dc9797af129e1f85582ba25452f
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:16:56 2023 -0500
+
+    set up the lists front end in react
+
+commit 7221c1864a4d206eb843b5d68a6e06e28c8b8195
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:16:24 2023 -0500
+
+    made my page for verified users along with css
+
+commit 2a8f5ff418a421801770c1e8585b1b70aca24b3c
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:15:18 2023 -0500
+
+    connected  signin and login front end with css
+
+commit 446765d8d871b8836379f2ddc20bb566fd8f4880
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:14:15 2023 -0500
+
+    manged my css for unacthenticated users
+
+commit 0838966f418322fa7de0f9e53aa95075b9f2afad
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:13:46 2023 -0500
+
+    set up  non authenticated user page with functions
+
+commit d7c1a4240719fcd252c8d4c85298f884c50b0bd8
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:13:04 2023 -0500
+
+    set up mainpage front end with all functions & css
+
+commit a4e3fff1857b0c49c6e0e325dda1574fbd51f12d
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:12:04 2023 -0500
+
+    made some css changes to my home page
+
+commit b2fb7569e5b829a15c6e629682478ef62c8c1dd6
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:11:31 2023 -0500
+
+    set up my home page front end
+
+commit 8fdc0798b98b10acb89d1a9a9f12a0be59c86b4d
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:10:40 2023 -0500
+
+    package json files set up and package lock
+
+commit 08d01dd1b36370bd7a896e8a5d7129efcbd4b88c
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:10:05 2023 -0500
+
+    set up verification html along with lists routes
+
+commit 8696a97f829448ec21545cd779840262108b93dc
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:09:27 2023 -0500
+
+    set up lists schema
+
+commit 4e436d844699b32cb64ddf33a17b7042b4f1b783
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:08:42 2023 -0500
+
+    set up user verification and user schema
+
+commit dcfc990abb4ea7447cecfb513408c4ed44804230
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:08:18 2023 -0500
+
+    created my users routes
+
+commit 9c85faba0c38e5f15e71fdef9f010b73f2fce538
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:07:54 2023 -0500
+
+    created superhero schema
+
+commit 4a735fd3266569d94bf6446022aae47edddb0a71
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:07:35 2023 -0500
+
+    created my super hero routes
+
+commit ddc1d01925c035afe85b2d25ba09e320f92e0225
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 23:06:35 2023 -0500
+
+    connecting to mongodb
+
+commit 22ee335bb3cd57edbf2a198da258bcd85042a78b
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Sun Dec 3 22:45:25 2023 -0500
+
+    set up my app.js and port server
+
+commit e43a518aa48dd7ca5e05906bea22756e1ed77df9
+Author: Nyme1x <113631719+Nyme1x@users.noreply.github.com>
+Date:   Mon Nov 20 22:10:47 2023 -0500
+
+    Initial commit

@@ -20,7 +20,7 @@ function VerifiedMainPage() {
   }, []);
 
   function fetchSuperheroes() {
-    fetch("/superheroes/api/search")
+    fetch("api/superheroes/api/search")
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -37,7 +37,7 @@ function VerifiedMainPage() {
 
   function searchSuperheroes(event) {
     event.preventDefault();
-    let searchUrl = `/superheroes/api/search?field=${encodeURIComponent(searchType)}&pattern=${encodeURIComponent(query)}`;
+    let searchUrl = `api/superheroes/api/search?field=${encodeURIComponent(searchType)}&pattern=${encodeURIComponent(query)}`;
     if (n > 0) {
       searchUrl += `&n=${encodeURIComponent(n)}`;
     }

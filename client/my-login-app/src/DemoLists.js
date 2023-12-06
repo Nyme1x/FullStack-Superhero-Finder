@@ -16,7 +16,7 @@ function DemoLists() {
 
   const fetchPublicLists = async () => {
     try {
-      const response = await fetch('/lists/Find/public');
+      const response = await fetch('api/lists/Find/public');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -33,7 +33,7 @@ function DemoLists() {
 
   const fetchHeroDetails = async (heroId) => {
     try {
-      const response = await fetch(`/superheroes/${encodeURIComponent(heroId)}`);
+      const response = await fetch(`api/superheroes/${encodeURIComponent(heroId)}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -47,7 +47,7 @@ function DemoLists() {
 
   const fetchListReviews = async (listName) => {
     try {
-      const response = await fetch(`/lists/lists/${encodeURIComponent(listName)}/reviews`);
+      const response = await fetch(`api/lists/lists/${encodeURIComponent(listName)}/reviews`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
