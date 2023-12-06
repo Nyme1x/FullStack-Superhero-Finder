@@ -9,7 +9,7 @@
     color: white; /* Make all text white */
     height: 100vh; /* Use the full height of the viewport */
     font-family: 'Bangers', cursive; /* Apply the superhero font to all text */
-    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-image: url('./5671166.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
   }

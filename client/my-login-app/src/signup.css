@@ -42,7 +42,7 @@
   button:hover,
   button:focus {
     background-color: grey;
-    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-image: url('./5671166.jpg'); /* Replace with your image path */
 
   }
   
@@ -66,7 +66,7 @@
   }
   
   .signup-container {
-    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-image: url('./5671166.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image in the container */
     border-radius: 8px;
@@ -78,7 +78,7 @@
   }
 
   .login-container {
-    background-image: url('C:\Users\naimb\OneDrive\Desktop\New folder\se3316-Nalbadaw-lab4\client\my-login-app\src\extra stuff\5671166.jpg'); /* Replace with your image path */
+    background-image: url('./5671166.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image in the container */
     border-radius: 8px;
